@@ -1,3 +1,5 @@
+GitHub Pages: https://harryli0088.github.io/nextjs-github-pages/
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 I followed this repo to configure the NextJS app to deploy on GitHub Pages with Github Actions: https://github.com/gregrickaby/nextjs-github-pages
