@@ -19,7 +19,7 @@ export default function TestRoute() {
         <br/>
         <p>This is a test route</p>
         <br/>
-        <Link href="/"><button>Go Back Home</button></Link>
+        <Link href="/" prefetch={false}><button>Go Back Home</button></Link>
       </div>
     </div>
   )
