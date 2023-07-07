@@ -1,5 +1,9 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import Link from 'next/link'
+
+import logo from 'public/next.svg'
+import vercelLogo from 'public/vercel.svg'
 
 export default function Home() {
   return (
@@ -17,7 +21,7 @@ export default function Home() {
           >
             By{' '}
             <Image
-              src="/vercel.svg"
+              src={vercelLogo}
               alt="Vercel Logo"
               className={styles.vercelLogo}
               width={100}
@@ -31,7 +35,7 @@ export default function Home() {
       <div className={styles.center}>
         <Image
           className={styles.logo}
-          src="/next.svg"
+          src={logo}
           alt="Next.js Logo"
           width={180}
           height={37}
@@ -40,53 +44,39 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+        <Link
+          href="/test-route"
+          className={styles.card}
+        >
+          <h2>
+            Test Route <span>-&gt;</span>
+          </h2>
+          <p>Try the test route.</p>
+        </Link>
+
+        <Link
+          href="/test-route"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
-            Docs <span>-&gt;</span>
+            Test Route in new tab <span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+          <p>Try the test route in a new tab.</p>
+        </Link>
 
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://github.com/harryli0088/nextjs-test"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
+            GitHub Repo <span>-&gt;</span>
           </h2>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Checkout the GitHub repo.
           </p>
         </a>
       </div>
